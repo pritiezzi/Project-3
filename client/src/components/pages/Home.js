@@ -11,6 +11,7 @@ function Home() {
 
       Simple answer. You no longer have to add any business cards to any event or conference. It is a paperless enviroment friendly and will definetly keep you organized and ready to go.  
       </p>
+  
     </div>
   );
 }

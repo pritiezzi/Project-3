@@ -1,44 +1,81 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
+MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 
-function NavTabs() {
-  return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
-        
-    
-      
-        
-        Home
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/home"
-          className={window.location.pathname === "/home" ? "nav-link active" : "nav-link"}
-        >
-        Profile 
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/profile"
-          className={window.location.pathname === "/profile" ? "nav-link active" : "nav-link"}
-        >
-        Directory
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/directory"
-          className={window.location.pathname === "/directory" ? "nav-link active" : "nav-link"}
-        >
-        Sign in
-        </Link>
-      </li>
-    </ul>
-  );
+
+class NavbarPage extends Component {
+state = {
+  isOpen: false
+};
+
+toggleCollapse = () => {
+  this.setState({ isOpen: !this.state.isOpen });
 }
 
-export default NavTabs;
+render() {
+  return (
+    
+      <MDBNavbar color="default-color" dark expand="md">
+        <MDBNavbarBrand>
+          <strong className="white-text">Navbar</strong>
+        </MDBNavbarBrand>
+        <MDBNavbarToggler onClick={this.toggleCollapse} />
+        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+          <MDBNavbarNav left>
+            <MDBNavItem active>
+              <MDBNavLink to="#!">Home</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="#!">Directory</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="#!">Profile</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret>
+                  <div className="d-none d-md-inline">Dropdown</div>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu className="dropdown-default">
+                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+          </MDBNavbarNav>
+          <MDBNavbarNav right>
+            <MDBNavItem>
+              <MDBNavLink className="waves-effect waves-light" to="#!">
+                <MDBIcon fab icon="twitter" />
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink className="waves-effect waves-light" to="#!">
+                <MDBIcon fab icon="google-plus-g" />
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret>
+                  <MDBIcon icon="user" />
+                </MDBDropdownToggle>
+                <MDBDropdownMenu className="dropdown-default">
+                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBNavbar>
+    
+    );
+  }
+}
+
+export default NavbarPage;
+

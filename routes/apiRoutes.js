@@ -11,16 +11,16 @@ module.exports = function(app) {
    // POST route for saving a new post
    app.post("/api/profile", function(req, res) {
     console.log(req.body)
-    db.petProfile.create({
-      Pet_name: req.body.name,
-      Gender: req.body.gender,
-      Age: req.body.age,
-      Breed: req.body.breed,
-      Type1: req.body.type,
-      Bio: req.body.bio,
-      Temp: req.body.temperament,
-      Act: req.body.activity,
-      Image: req.body.image
+    db.userProfile.create({
+      User_name: req.body.name,
+      Photo: req.body.photo,
+      Title: req.body.title,
+      Location: req.body.location,
+      Phone: req.body.phone,
+      Email: req.body.email,
+      Linkedin: req.body.linkedin,
+      Github: req.body.github,
+      Qrcode: req.body.qrcode
     })
       .then(function(data) {
         console.log("success")

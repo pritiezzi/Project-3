@@ -1,67 +1,76 @@
 module.exports = function(sequelize, DataTypes) {
-    var petProfile = sequelize.define("petProfile", {
-      Pet_name: {
+    var cardProfile = sequelize.define("cardProfile", {
+      User_name: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           len: [1]
         }
       },
-      Gender: {
+      Photo: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           len: [1]
         }
       },
-      Age: {
+      Title: {
         type: DataTypes.STRING,
         alllowerNull: false,
         
       },
-      Breed: {
+      Location: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           len: [1]
         }
     },
-    Type: {
+    Phone: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           len: [1]
         }
     },
-    Bio: {
+    Email: {
         type: DataTypes.TEXT,
         allowNull: false,
         validate: {
           len: [1]
         }
     },
-    Temp: {
+    Website: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           len: [1]
         }
     },
-    Type: {
+    Linkedin: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           len: [1]
         }
     },
-    Act: {
+    Github: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           len: [1]
         }
+    },
+
+    Qrcode: {
+      type: DataTypes.STRING,
+      allowNull:false,
+      validate: {
+        len: [1]
+      }
     }
     });
-    return petProfile;
+    
+    return cardProfile;
   };
   

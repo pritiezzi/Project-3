@@ -2,9 +2,16 @@
   "name": "project-3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,11 +24,10 @@
   },
   "homepage": "https://github.com/badams198/Project-3#readme",
   "dependencies": {
-    "@material-ui/core": "^4.4.3",
-    "@material-ui/icons": "^4.4.3",
-    "bootstrap": "^4.3.1",
-    "mdbreact": "^4.20.0",
-    "react-bootstrap": "^1.0.0-beta.12",
-    "react-materialize": "^3.4.1"
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "mysql2": "^1.7.0",
+    "nodemon": "^1.19.3",
+    "sequelize": "^5.19.1"
   }
 }

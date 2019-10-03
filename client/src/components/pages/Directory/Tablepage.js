@@ -1,8 +1,9 @@
 import React from 'react';
 import { MDBInput } from 'mdbreact';
+import { MDBCard, MDBCardBody,MDBCol, MDBRow, MDBContainer  } from 'mdbreact';
 
 const TablePage = (props) => {
-  const data_panel = { MDBCard, MDBCardBody,MDBCol, MDBRow, MDBContainer 
+  const data_panel = {  
 
     columns: [
       {

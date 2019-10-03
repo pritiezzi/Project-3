@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { MDBNavbar,MDBRow,MDBCol,MDBInput, MDBIcon, MDBNavbarBrand, MDBNavbarNav,MDBCardBody,MDBCard, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem,MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBCardHeader, MDBModalFooter } from "mdbreact";
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class NavbarPage extends Component {
 state = {
@@ -22,8 +22,9 @@ toggle = () => {
 
 render() {
   return (
-    
+    <Router>
       <MDBNavbar color="default-color" dark expand="md">
+      <Switch>
         <MDBNavbarBrand>
           <strong className="white-text">E-Card</strong>
         </MDBNavbarBrand>
@@ -41,6 +42,7 @@ render() {
             </MDBNavItem>
             <MDBNavItem>
             <MDBContainer>
+            
       <MDBBtn onClick={this.toggle}>Sign Up</MDBBtn>
       <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
         
@@ -124,8 +126,9 @@ render() {
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>
+      </Switch>  
       </MDBNavbar>
-    
+    </Router>
     );
   }
 }

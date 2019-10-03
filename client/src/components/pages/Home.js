@@ -62,13 +62,13 @@ class ClassicFormPage extends React.Component {
                 >
                   <MDBNavbarNav left>
                     <MDBNavItem active>
-                      <MDBNavLink to="#!">Home</MDBNavLink>
+                      <MDBNavLink to="/">Home</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to="#!">Profile</MDBNavLink>
+                      <MDBNavLink to="/Profile">Profile</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to="#!">Directory</MDBNavLink>
+                      <MDBNavLink to="/Directory">Directory</MDBNavLink>
                     </MDBNavItem>
                   </MDBNavbarNav>
                   <MDBNavbarNav right>

@@ -147,7 +147,7 @@ class ClassicFormPage extends React.Component {
                           <MDBBtn color="indigo">Sign In</MDBBtn>
                           <br></br>
                           <br></br>
-                          <font color="white"><p3> If you already have an account please sign in!</p3></font>
+                          <font color="white"><p3> If you already have an account please, sign in!</p3></font>
                           <hr className="hr-light" />
                           <div className="text-center d-flex justify-content-center white-label">
                             <a href="#!" className="p-2 m-2">

@@ -1,9 +1,8 @@
 import React from 'react';
-import { MDBInput } from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBCardHeader, MDBInput, MDBBtn, MDBTable, MDBTableBody, MDBTableHead  } from 'mdbreact';
 
 const TablePage = (props) => {
-  const data_panel = { MDBCard, MDBCardBody,MDBCol, MDBRow, MDBContainer 
-
+  const data_panel = {
     columns: [
       {
         'label': <MDBInput label=" " type="checkbox" id="checkbox5" />,
@@ -31,8 +30,8 @@ const TablePage = (props) => {
         'sort': 'asc'
       },
       {
-        'label': 'Github',
-        'field': 'Github',
+        'label': 'GitHub',
+        'field': 'GitHub',
         'sort': 'asc'
       },
       {
@@ -44,50 +43,84 @@ const TablePage = (props) => {
     rows: [
       {
         'check': <MDBInput label=" " type="checkbox" id="checkbox6" />,
-        'first': 'Priscila',
-        'last': 'Tiezzi',
-        'Location': 'Nsshville',
-        'Title': 'Front-End developer',
-        'Github': 'https://github.com/pritiezzi',
-        'Linkedin': 'https://www.linkedin.com/in/priscila-tiezzi-927a18165/'
+        'first': 'Mark',
+        'last': 'Otto',
+        'Location': '@mdo',
+        'Title': 'Mark',
+        'GitHub': 'Otto',
+        'Linkedin': '@mdo'
       },
       {
         'check': <MDBInput label=" " type="checkbox" id="checkbox7" />,
-        'first': 'Priscila',
-        'last': 'Tiezzi',
-        'Location': 'Nsshville',
-        'Title': 'Front-End developer',
-        'Github': 'https://github.com/pritiezzi',
-        'Linkedin': 'https://www.linkedin.com/in/priscila-tiezzi-927a18165/'
+        'first': 'Mark',
+        'last': 'Otto',
+        'Location': '@mdo',
+        'Title': 'Mark',
+        'GitHub': 'Otto',
+        'Linkedin': '@mdo'
       },
       {
         'check': <MDBInput label=" " type="checkbox" id="checkbox8" />,
-        'first': 'Priscila',
-        'last': 'Tiezzi',
-        'Location': 'Nsshville',
-        'Title': 'Front-End developer',
-        'Github': 'https://github.com/pritiezzi',
-        'Linkedin': 'https://www.linkedin.com/in/priscila-tiezzi-927a18165/'
+        'first': 'Mark',
+        'last': 'Otto',
+        'Location': '@mdo',
+        'Title': 'Mark',
+        'GitHub': 'Otto',
+        'Linkedin': '@mdo'
       },
       {
         'check': <MDBInput label=" " type="checkbox" id="checkbox9" />,
-        'first': 'Priscila',
-        'last': 'Tiezzi',
-        'Location': 'Nsshville',
-        'Title': 'Front-End developer',
-        'Github': 'https://github.com/pritiezzi',
-        'Linkedin': 'https://www.linkedin.com/in/priscila-tiezzi-927a18165/'
+        'first': 'Mark',
+        'last': 'Otto',
+        'Location': '@mdo',
+        'Title': 'Mark',
+        'GitHub': 'Otto',
+        'Linkedin': '@mdo'
       },
       {
         'check': <MDBInput label=" " type="checkbox" id="checkbox10" />,
-        'first': 'Priscila',
-        'last': 'Tiezzi',
-        'Location': 'Nsshville',
-        'Title': 'Front-End developer',
-        'Github': 'https://github.com/pritiezzi',
-        'Linkedin': 'https://www.linkedin.com/in/priscila-tiezzi-927a18165/'
+        'first': 'Mark',
+        'last': 'Otto',
+        'Location': '@mdo',
+        'Title': 'Mark',
+        'GitHub': 'Otto',
+        'Linkedin': '@md',
       }
-    ]}
+    ]
   };
-  
-  export default TablePage; 
+
+  return(
+    <MDBCard narrow>
+      <MDBCardHeader className="view view-cascade gradient-card-header blue-gradient d-flex justify-content-between align-items-center py-2 mx-4 mb-3">
+        <div>
+          <MDBBtn outline rounded size="sm" color="white" className="px-2">
+            <i className="fa fa-th-large mt-0"></i>
+          </MDBBtn>
+          <MDBBtn outline rounded size="sm" color="white" className="px-2">
+            <i className="fa fa-columns mt-0"></i>
+          </MDBBtn>
+        </div>
+        <a href="#" className="white-text mx-3">Table name</a>
+        <div>
+          <MDBBtn outline rounded size="sm" color="white" className="px-2">
+            <i className="fas fa-pencil-alt mt-0"></i>
+          </MDBBtn>
+          <MDBBtn outline rounded size="sm" color="white" className="px-2">
+            <i className="fas fa-times mt-0"></i>
+          </MDBBtn>
+          <MDBBtn outline rounded size="sm" color="white" className="px-2">
+            <i className="fa fa-info-circle mt-0"></i>
+          </MDBBtn>
+        </div>
+      </MDBCardHeader>
+      <MDBCardBody cascade>
+        <MDBTable btn fixed>
+          <MDBTableHead columns={data_panel.columns} />
+          <MDBTableBody rows={data_panel.rows} />
+        </MDBTable>
+      </MDBCardBody>
+    </MDBCard>
+  );
+};
+
+export default TablePage;

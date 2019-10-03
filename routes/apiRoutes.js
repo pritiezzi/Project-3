@@ -11,7 +11,7 @@ module.exports = function(app) {
    // POST route for saving a new post
    app.post("/api/profile", function(req, res) {
     console.log(req.body)
-    db.userProfile.create({
+    db.cardProfile.create({
       User_name: req.body.name,
       Photo: req.body.photo,
       Title: req.body.title,

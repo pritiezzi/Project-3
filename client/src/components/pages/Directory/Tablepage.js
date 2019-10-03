@@ -2,7 +2,8 @@ import React from 'react';
 import { MDBInput } from 'mdbreact';
 
 const TablePage = (props) => {
-  const data_panel = {
+  const data_panel = { MDBCard, MDBCardBody,MDBCol, MDBRow, MDBContainer 
+
     columns: [
       {
         'label': <MDBInput label=" " type="checkbox" id="checkbox5" />,
@@ -86,7 +87,7 @@ const TablePage = (props) => {
         'Github': 'https://github.com/pritiezzi',
         'Linkedin': 'https://www.linkedin.com/in/priscila-tiezzi-927a18165/'
       }
-    ]
+    ]}
   };
   
-  export default TablePage;
+  export default TablePage; 

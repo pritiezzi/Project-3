@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-
+// import "./home.css";
 
 import {
   MDBNavbar,
@@ -23,7 +23,7 @@ import {
   MDBFormInline,
   MDBAnimation,
 } from "mdbreact";
-import "./home.css";
+
 
 class ClassicFormPage extends React.Component {
   state = {

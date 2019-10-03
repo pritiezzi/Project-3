@@ -22,7 +22,7 @@ const PanelPage = () => {
     
           <MDBCard color="info-color" text="white" className="text-center">
             <MDBCardBody>
-             Think twice before contacting
+            Alert! Please don't forget to contact 
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -30,7 +30,7 @@ const PanelPage = () => {
         <MDBCol md="6">
           <MDBCard color="red lighten-1" text="white" className="text-center">
             <MDBCardBody>
-              Alert! Please don't forget to contact 
+              Think twice before contacting 
             </MDBCardBody>
           </MDBCard>
     

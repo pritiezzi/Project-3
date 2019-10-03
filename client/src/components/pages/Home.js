@@ -106,7 +106,7 @@ class ClassicFormPage extends React.Component {
                   </h1>
                   <hr className="hr-light" />
                   <h6 className="mb-4">
-                  Make your life easier by downloading our application that not only design your own business card, but also scans other potential business contacts making them readily available and organized as needed.
+                  Make your life easier by downloading our application that not only designs your own business card, but also scans other potential business contacts making them readily available and organized as needed.
      Why is our app a great idea?
      Simple answer. You no longer have to worry about remembering to carry your business cards to any event or conference. 
      It is a paperless enviroment friendly eletronic card that will keep you more organized and ready to go. You will also have one less thing to worry about in your already crazy work life.
@@ -147,7 +147,7 @@ class ClassicFormPage extends React.Component {
                           <MDBBtn color="indigo">Sign In</MDBBtn>
                           <br></br>
                           <br></br>
-                          <font color="white"><p3> If you have an account please sign in!</p3></font>
+                          <font color="white"><p3> If you already have an account please sign in!</p3></font>
                           <hr className="hr-light" />
                           <div className="text-center d-flex justify-content-center white-label">
                             <a href="#!" className="p-2 m-2">

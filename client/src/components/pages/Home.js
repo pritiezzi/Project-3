@@ -111,6 +111,7 @@ class ClassicFormPage extends React.Component {
      Simple answer. You no longer have to worry about remembering to carry your business cards to any event or conference. 
      It is a paperless enviroment friendly eletronic card that will keep you more organized and ready to go. You will also have one less thing to worry about in your already crazy work life.
                   </h6>
+                  <br></br>
                   <MDBBtn outline color="white">
                     Learn More
                   </MDBBtn>

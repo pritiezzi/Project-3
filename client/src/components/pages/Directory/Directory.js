@@ -1,7 +1,7 @@
 import React from 'react';
 import PanelPage from "./panelpage"
-import Tablepage from "./Tablepage"
-
+// import Tablepage from "./Tablepage"
+import ListGroupPage from "./Tablepage";
 
 
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBCardHeader, MDBInput, MDBBtn, MDBTable, MDBTableBody, MDBTableHead  } from 'mdbreact';
+// import 'mdbreact/dist/css/mdb.css';
 
 const TablePage = (props) => {
   const data_panel = {

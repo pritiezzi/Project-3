@@ -4,6 +4,7 @@ import NavbarPage from "./components/pages/NavTabs";
 import Home from "./components/pages/Home";
 import Profile from "./components/pages/Profile";
 import Directory from "./components/pages/Directory/Directory";
+import 'mdbreact/dist/css/mdb.css';
 
 
 function App() {

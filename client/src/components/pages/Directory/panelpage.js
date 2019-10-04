@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBCol, MDBRow, MDBContainer } from "mdbreact";
+// import 'mdbreact/dist/css/mdb.css';
 
-const PanelPage = () => {
+const panelpage = () => {
 return (
 <MDBContainer>
   <MDBRow>
@@ -32,13 +34,13 @@ return (
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard color="success-color" text="white" className="text-center">
+      <MDBCard color="primary-color" text="white" className="text-center">
         <MDBCardBody>
           Think twice before contacting.
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard color="mdb-color lighten-2" text="white" className="text-center">
+      <MDBCard color="secondary-color" text="white" className="text-center">
         <MDBCardBody>
           No, definatly no. Block. Run.
         </MDBCardBody>
@@ -49,4 +51,4 @@ return (
 );
 };
 
-export default PanelPage;
+export default panelpage;

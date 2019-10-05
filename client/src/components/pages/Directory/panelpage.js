@@ -1,6 +1,7 @@
-
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBCol, MDBRow, MDBContainer } from "mdbreact";
+import "./Directory.css";
+
 
 const PanelPage = () => {
 return (

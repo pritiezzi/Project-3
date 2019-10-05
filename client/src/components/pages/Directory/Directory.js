@@ -1,24 +1,26 @@
 import React from 'react';
 import PanelPage from "./panelpage"
-// import Tablepage from "./Tablepage"
-import ListGroupPage from "./Tablepage";
-
+import Tablepage from "./Tablepage"
+import Background from "./Background"
+import "./Directory.css";
+import Navtab2 from "./Navtab2"
 
 
 class Directory extends React.Component {
     constructor(props) {
         super(props);
-        // state = {
-    
-        // }
-    }
-
+       
+          }
     render() {
         return (
-            <div>
+        
+            <div className="bg">
+                <Navtab2/>
                 <Tablepage/>
-
                 <PanelPage/>
+            
+                
+
             </div>
         );
     }

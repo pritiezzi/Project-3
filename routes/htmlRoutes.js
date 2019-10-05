@@ -1,38 +1,54 @@
 var db = require("../models");
+const express = require('express');
+const router = express.Router();
+
+
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
-    });
-  });
+  // Load index page
+  // app.get("/", function(req, res) {
+  //   db.Example.findAll({}).then(function(dbExamples) {
+  //     res.render("index", {
+  //       msg: "Welcome!",
+  //       examples: dbExamples
+  //     });
+  //   });
+  // });
 
-   // POST route for saving a new post
-   app.post("/api/profile", function(req, res) {
-    console.log(req.body)
-    db.cardProfile.create({
-      User_name: req.body.name,
-      Photo: req.body.photo,
-      Title: req.body.title,
-      Location: req.body.location,
-      Phone: req.body.phone,
-      Email: req.body.email,
-      Linkedin: req.body.linkedin,
-      Github: req.body.github,
-      QRcode: req.body.qrcode
-    })
-      .then(function(data) {
-        console.log("success")
+  // // Load example page and pass in an example by id
+  // app.get("/example/:id", function(req, res) {
+  //   db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
+  //     res.render("example", {
+  //       example: dbExample
+  //     });
+  //   });
+  // });
 
-        res.json("success");
+  // // Render 404 page for any unmatched routes
+  // app.get("*", function(req, res) {
+  //   res.render("404");
+  // });
+
+    app.get('/', function(req, res){
+      db.cardProfile.findAll({limit:3}).then(function(cardProfile) {
+        console.log(cardProfile);
+        res.render("index",{
+          profiles: cardProfile
+        });
       });
-  });
-
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
     });
-  });
+
+    app.get('/browse', function(req, res){
+      db.cardProfile.findAll({}).then(function(dbProfiles) {
+        console.log('dbProfiles',dbProfiles);
+        res.render("browse", {
+          friends: dbProfiles
+        });
+      });
+    })
+
+    app.get('/profile', function(req, res){
+
+      res.render('profile')
+    })
 };

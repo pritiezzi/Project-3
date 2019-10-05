@@ -10,12 +10,21 @@ body, html {
   }
 
   .gradient-card-header{
-    background-color: #82b1ff;
+    background-color:#7986cb;
 
   }
 
   .bg-info {
-    background-image: url("https://mdbootstrap.com/img/Photos/Others/images/91.jpg");
+    background-color:#7986cb ;
+  
+  }
+  .cardaround{
+    background-color:#7986cb;
+
+  }
+  .cardbody{
+    background-color: white;
+    font-size: large
   }
 
   

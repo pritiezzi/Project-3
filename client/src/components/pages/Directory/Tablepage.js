@@ -95,13 +95,13 @@ const TablePage = (props) => {
     <MDBContainer>  
     <MDBCard narrow>
 
-      <MDBCardHeader className="view view-cascade gradient-card-header py-2 mx-4 mb-3">
-      <div className="white-text text-center mx-3"> <a href="#" className="white-text text-center mx-3">Contacts</a></div>
+      <MDBCardHeader ClassName="bg-info" className="view view-cascade gradient-card-header py-4 mx-6 mb-4">
+      <div className="white-text font-weight-bold text-uppercase text-center mx-6"> <a href="#" className="black-text  text-center mx-6">Contacts</a></div>
         
       </MDBCardHeader>
     
-      <MDBCardBody className="bg-info" cascade>
-        <MDBTable className="bg-info" btn fixed>
+      <MDBCardBody className="cardaround">
+        <MDBTable className="cardbody" btn fixed>
           <MDBTableHead columns={data_panel.columns} />
           <MDBTableBody rows={data_panel.rows} />
         </MDBTable>

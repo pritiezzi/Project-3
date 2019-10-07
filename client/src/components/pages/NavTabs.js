@@ -23,7 +23,7 @@ toggle = () => {
 render() {
   return (
     <Router>
-      <MDBNavbar color="default-color" dark expand="md">
+      <MDBNavbar color="#01579b light-blue darken-4" dark expand="md">
       <Switch>
         <MDBNavbarBrand>
           <strong className="white-text">E-Card</strong>

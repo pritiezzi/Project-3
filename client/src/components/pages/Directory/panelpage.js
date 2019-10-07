@@ -1,25 +1,26 @@
-
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBCol, MDBRow, MDBContainer } from "mdbreact";
+import "./Directory.css";
+
 
 const PanelPage = () => {
 return (
 <MDBContainer>
   <MDBRow>
     <MDBCol md="6" className="mb-6">
-      <MDBCard color="indigo" text="white" className="text-center">
+      <MDBCard color="indigo lighten-2" text="white" className="text-center">
         <MDBCardBody>
         Very intersesting contact/ conversation.
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard color="pink lighten-2" text="white" className="text-center">
+      <MDBCard color="indigo lighten-1" text="white" className="text-center">
         <MDBCardBody>
         Great asset for future business.
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard color="teal accent-3" text="white" className="text-center">
+      <MDBCard color="indigo" text="white" className="text-center">
         <MDBCardBody>
         Keep in touch! You never know.
         </MDBCardBody>
@@ -27,19 +28,19 @@ return (
     </MDBCol>
 
     <MDBCol md="6">
-      <MDBCard color="purple" text="white" className="text-center">
+      <MDBCard color="indigo darken-1" text="white" className="text-center">
         <MDBCardBody>
         Alert! Don't forget to reach out.
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard color="red darken-4" text="white" className="text-center">
+      <MDBCard color=" indigo darken-2" text="black" className="text-center">
         <MDBCardBody>
         Think twice before contacting.
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard color="grey darken-4" text="white" className="text-center">
+      <MDBCard color="indigo darken-3" text="black" className="text-center">
         <MDBCardBody>
         No, definatly no. Block. Run.
         </MDBCardBody>

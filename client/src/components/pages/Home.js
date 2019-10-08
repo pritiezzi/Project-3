@@ -45,7 +45,7 @@ class ClassicFormPage extends React.Component {
     );
     return (
       <div id="classicformpage">
-        <Router>
+        
           <div>
             <MDBNavbar dark expand="md" fixed="top">
               <MDBContainer>
@@ -62,13 +62,13 @@ class ClassicFormPage extends React.Component {
                 >
                   <MDBNavbarNav left>
                     <MDBNavItem active>
-                      <MDBNavLink to="#!">Home</MDBNavLink>
+                      <MDBNavLink to="/">Home</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to="#!">Profile</MDBNavLink>
+                      <MDBNavLink to="/profile">Profile</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to="#!">Directory</MDBNavLink>
+                      <MDBNavLink to="/directory">Directory</MDBNavLink>
                     </MDBNavItem>
                   </MDBNavbarNav>
                   <MDBNavbarNav right>
@@ -90,7 +90,7 @@ class ClassicFormPage extends React.Component {
             </MDBNavbar>
             {this.state.collapseID && overlay}
           </div>
-        </Router>
+      
 
         <MDBView>
           <MDBMask className="d-flex justify-content-center align-items-center gradient">
@@ -106,10 +106,12 @@ class ClassicFormPage extends React.Component {
                   </h1>
                   <hr className="hr-light" />
                   <h6 className="mb-4">
-                  Make your life easier by downloading our application and not only designing your own business card, but also scanning other potential business contacts making them readily available and organized as needed.
-     What is our app a great idea?
-     Simple answer. You no longer have to add any business cards to any event or conference. It is a paperless enviroment friendly and will definetly keep you organized and ready to go.
+                  Make your life easier by downloading our application that not only designs your own business card, but also scans other potential business contacts making them readily available and organized as needed.
+     Why is our app a great idea?
+     Simple answer. You no longer have to worry about remembering to carry your business cards to any event or conference. 
+     It is a paperless enviroment friendly eletronic card that will keep you more organized and ready to go. You will also have one less thing to worry about in your already crazy work life.
                   </h6>
+                  <br></br>
                   <MDBBtn outline color="white">
                     Learn More
                   </MDBBtn>
@@ -146,13 +148,20 @@ class ClassicFormPage extends React.Component {
                           <MDBBtn color="indigo">Sign In</MDBBtn>
                           <br></br>
                           <br></br>
-                          <font color="white"><p3> If you have an account please sign in!</p3></font>
+                          <font color="white"><p3> If you already have an account please, sign in!</p3></font>
                           <hr className="hr-light" />
                           <div className="text-center d-flex justify-content-center white-label">
                             <a href="#!" className="p-2 m-2">
                               <MDBIcon
                                 fab
-                                icon="twitter"
+                                icon="email"
+                                className="white-text"
+                              />
+                            </a>
+                            <a href="#!" className="p-2 m-2">
+                              <MDBIcon
+                                fab
+                                icon="website"
                                 className="white-text"
                               />
                             </a>
@@ -166,12 +175,13 @@ class ClassicFormPage extends React.Component {
                             <a href="#!" className="p-2 m-2">
                               <MDBIcon
                                 fab
-                                icon="instagram"
+                                icon="github"
                                 className="white-text"
                               />
                             </a>
                           </div>
                         </div>
+                        
                       </MDBCardBody>
                     </MDBCard>
                   </MDBAnimation>
@@ -180,18 +190,6 @@ class ClassicFormPage extends React.Component {
             </MDBContainer>
           </MDBMask>
         </MDBView>
-
-        <MDBContainer>
-          <MDBRow className="py-5">
-            <MDBCol md="12" className="text-center">
-              <p>
-              Make your life easier by downloading our application and not only designing your own business card, but also scanning other potential business contacts making them readily available and organized as needed.
-     What is our app a great idea?
-     Simple answer. You no longer have to add any business cards to any event or conference. It is a paperless enviroment friendly and will definetly keep you organized and ready to go.
-              </p>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
       </div>
     );
   }

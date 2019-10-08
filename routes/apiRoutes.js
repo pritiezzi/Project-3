@@ -20,6 +20,7 @@ module.exports = function(app) {
       Location: req.body.Location,
       Phone: req.body.Phone,
       Email: req.body.Email,
+      Website:req.body.Website,
       Linkedin: req.body.Linkedin,
       Github: req.body.Github,
       Qrcode: req.body.Qrcode

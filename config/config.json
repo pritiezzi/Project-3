@@ -1,21 +1,26 @@
 {
-    "development": {
-      "username": "eaqoimawy9z8xxwb",
-      "password": "wyyoqpy2lmm6d6cw",
-      "database": "w42dj4cpjq3w0emd",
-      "host": "q57yawiwmnaw13d2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-      "dialect": "mysql"
-    },
-    "test": {
-      "username": "eaqoimawy9z8xxwb",
-      "password": "wyyoqpy2lmm6d6cw",
-      "database": "w42dj4cpjq3w0emd",
-      "host": "q57yawiwmnaw13d2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-      "dialect": "mysql",
-      "logging": false
-    },
-    "production": {
-      "use_env_variable": "JAWSDB_URL",
-      "dialect": "mysql"
-    }
+  "development": {
+    "username": "root",
+    "password": "password",
+    "database": "ecard",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "password",
+    "database": "ecard",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "password",
+    "database": "ecard",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
   }
+}

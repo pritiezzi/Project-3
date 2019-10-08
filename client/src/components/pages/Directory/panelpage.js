@@ -34,13 +34,13 @@ return (
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard color=" indigo darken-2" text="black" className="text-center">
+      <MDBCard color=" indigo darken-2" text="white" className="text-center">
         <MDBCardBody>
         Think twice before contacting.
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard color="indigo darken-3" text="black" className="text-center">
+      <MDBCard color="indigo darken-3" text="white" className="text-center">
         <MDBCardBody>
         No, definatly no. Block. Run.
         </MDBCardBody>

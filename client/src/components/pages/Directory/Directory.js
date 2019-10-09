@@ -5,6 +5,7 @@ import Tablepage from "./Tablepage";
 
 
 
+
 class Directory extends React.Component {
     constructor(props) {
         super(props);
@@ -15,11 +16,13 @@ class Directory extends React.Component {
 
     render() {
         return (
+            
             <div>
                 <Tablepage/>
 
                 <PanelPage/>
             </div>
+                
         );
     }
 };

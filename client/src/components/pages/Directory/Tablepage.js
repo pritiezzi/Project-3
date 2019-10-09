@@ -45,48 +45,48 @@ const TablePage = (props) => {
     rows: [
       {
         'check': <MDBInput label=" " type="checkbox" id="checkbox6" />,
-        'first': 'Mark',
-        'last': 'Otto',
-        'Location': '@mdo',
-        'Title': 'Mark',
-        'GitHub': 'Otto',
-        'Linkedin': '@mdo'
+        'first': 'Ricky',
+        'last': 'Smith',
+        'Location': 'Nashville',
+        'Title': 'Full Stack Developer',
+        'GitHub': 'Link',
+        'Linkedin': 'Link'
       },
       {
         'check': <MDBInput label=" " type="checkbox" id="checkbox7" />,
-        'first': 'Mark',
-        'last': 'Otto',
-        'Location': '@mdo',
-        'Title': 'Mark',
-        'GitHub': 'Otto',
-        'Linkedin': '@mdo'
+        'first': 'Maria',
+        'last': 'Antoinette',
+        'Location': 'San Francisco',
+        'Title': 'Front-End & UI',
+        'GitHub': 'Link',
+        'Linkedin': 'Link'
       },
       {
         'check': <MDBInput label=" " type="checkbox" id="checkbox8" />,
         'first': 'Mark',
-        'last': 'Otto',
-        'Location': '@mdo',
-        'Title': 'Mark',
-        'GitHub': 'Otto',
-        'Linkedin': '@mdo'
+        'last': 'Walburg',
+        'Location': 'New York',
+        'Title': 'Tech Lead',
+        'GitHub': 'Link',
+        'Linkedin': 'Link'
       },
       {
         'check': <MDBInput label=" " type="checkbox" id="checkbox9" />,
-        'first': 'Mark',
-        'last': 'Otto',
-        'Location': '@mdo',
-        'Title': 'Mark',
-        'GitHub': 'Otto',
-        'Linkedin': '@mdo'
+        'first': 'Jimmy',
+        'last': 'Crackedcorn',
+        'Location': 'Washington DC',
+        'Title': 'Application Security Specialist',
+        'GitHub': 'Link',
+        'Linkedin': 'Link'
       },
       {
         'check': <MDBInput label=" " type="checkbox" id="checkbox10" />,
-        'first': 'Mark',
-        'last': 'Otto',
-        'Location': '@mdo',
-        'Title': 'Mark',
-        'GitHub': 'Otto',
-        'Linkedin': '@md',
+        'first': 'Marissa',
+        'last': 'Langley',
+        'Location': 'Seattle',
+        'Title': 'Back-End Developer ',
+        'GitHub': 'Link',
+        'Linkedin': 'Link',
       }
     ]
   };

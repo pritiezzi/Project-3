@@ -22,8 +22,8 @@ toggle = () => {
 
 render() {
   return (
-    <Router>
-      <MDBNavbar color="#01579b light-blue darken-4" dark expand="md">
+    
+      <MDBNavbar color="default-color" dark expand="md">
       <Switch>
         <MDBNavbarBrand>
           <strong className="white-text">E-Card</strong>
@@ -35,17 +35,18 @@ render() {
               <MDBNavLink to="/">Home</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/Directory">Directory</MDBNavLink>
+              <MDBNavLink to="/registration">Registration</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/Profile">Profile</MDBNavLink>
+              <MDBNavLink to="/profile">Profile</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="/directory">Directory</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
             <MDBContainer>
-            
       <MDBBtn onClick={this.toggle}>Sign Up</MDBBtn>
       <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
-        
         
         
           
@@ -65,14 +66,14 @@ render() {
                     validate
                     error="wrong"
                     success="right"
-                  />
+                    />
                   <MDBInput
                     label="Type your password"
                     icon="lock"
                     group
                     type="password"
                     validate
-                  />
+                    />
                 </div>
 
               <div className="text-center mt-4">
@@ -80,7 +81,8 @@ render() {
                   color="light-blue"
                   className="mb-3"
                   type="submit"
-                >
+                
+                  >
                   Login
                 </MDBBtn>
               </div>
@@ -128,9 +130,10 @@ render() {
         </MDBCollapse>
       </Switch>  
       </MDBNavbar>
-    </Router>
+      
     );
   }
+        
 }
 
 export default NavbarPage;

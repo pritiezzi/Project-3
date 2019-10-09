@@ -45,7 +45,7 @@ class ClassicFormPage extends React.Component {
     );
     return (
       <div id="classicformpage">
-        <Router>
+        
           <div>
             <MDBNavbar dark expand="md" fixed="top">
               <MDBContainer>
@@ -65,10 +65,13 @@ class ClassicFormPage extends React.Component {
                       <MDBNavLink to="/">Home</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to="/Profile">Profile</MDBNavLink>
+                      <MDBNavLink to="/registration">Registration</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to="/Directory">Directory</MDBNavLink>
+                      <MDBNavLink to="/profile">Profile</MDBNavLink>
+                    </MDBNavItem>
+                    <MDBNavItem>
+                      <MDBNavLink to="/directory">Directory</MDBNavLink>
                     </MDBNavItem>
                   </MDBNavbarNav>
                   <MDBNavbarNav right>
@@ -90,7 +93,7 @@ class ClassicFormPage extends React.Component {
             </MDBNavbar>
             {this.state.collapseID && overlay}
           </div>
-        </Router>
+      
 
         <MDBView>
           <MDBMask className="d-flex justify-content-center align-items-center gradient">
@@ -119,7 +122,7 @@ class ClassicFormPage extends React.Component {
 
                 <MDBCol md="6" xl="5" className="mb-4">
                   <MDBAnimation type="fadeInRight" delay=".3s">
-                    <MDBCard id="classic-card">
+                    <MDBCard id="login" name="login" method="post" action="/login" >
                       <MDBCardBody className="white-text">
                         <h3 className="text-center">
                           <MDBIcon icon="user" /> Register:
@@ -136,6 +139,7 @@ class ClassicFormPage extends React.Component {
                           iconClass="white-text"
                           label="Your email"
                           icon="envelope"
+                          id="email"
                         />
                         <MDBInput
                           className="white-text"
@@ -143,9 +147,11 @@ class ClassicFormPage extends React.Component {
                           label="Your password"
                           icon="lock"
                           type="password"
+                          id="password"
                         />
                         <div className="text-center mt-4 black-text">
-                          <MDBBtn color="indigo">Sign In</MDBBtn>
+                          <MDBBtn color="indigo" input="submit" value="Sign In" href="/registration">Sign In</MDBBtn>
+                          <MDBBtn color="indigo" input="submit" value="Sign In" href="/profile"></MDBBtn>
                           <br></br>
                           <br></br>
                           <font color="white"><p3> If you already have an account please, sign in!</p3></font>
@@ -154,7 +160,14 @@ class ClassicFormPage extends React.Component {
                             <a href="#!" className="p-2 m-2">
                               <MDBIcon
                                 fab
-                                icon="twitter"
+                                icon="email"
+                                className="white-text"
+                              />
+                            </a>
+                            <a href="#!" className="p-2 m-2">
+                              <MDBIcon
+                                fab
+                                icon="website"
                                 className="white-text"
                               />
                             </a>
@@ -168,12 +181,13 @@ class ClassicFormPage extends React.Component {
                             <a href="#!" className="p-2 m-2">
                               <MDBIcon
                                 fab
-                                icon="instagram"
+                                icon="github"
                                 className="white-text"
                               />
                             </a>
                           </div>
                         </div>
+                        
                       </MDBCardBody>
                     </MDBCard>
                   </MDBAnimation>
@@ -182,18 +196,6 @@ class ClassicFormPage extends React.Component {
             </MDBContainer>
           </MDBMask>
         </MDBView>
-
-        <MDBContainer>
-          <MDBRow className="py-5">
-            <MDBCol md="12" className="text-center">
-              <p>
-              Make your life easier by downloading our application and not only designing your own business card, but also scanning other potential business contacts making them readily available and organized as needed.
-     What is our app a great idea?
-     Simple answer. You no longer have to add any business cards to any event or conference. It is a paperless enviroment friendly and will definetly keep you organized and ready to go.
-              </p>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
       </div>
     );
   }

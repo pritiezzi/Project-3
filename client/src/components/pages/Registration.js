@@ -100,7 +100,7 @@ const FormPage = () => {
               />
             </div>
             <div className="text-center">
-              <MDBBtn color="black-text">Register</MDBBtn>
+              <MDBBtn color="black-text" href="/profile">Register</MDBBtn>
             </div>
           </form>
         </MDBCol>
